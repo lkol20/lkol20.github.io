@@ -1,0 +1,27 @@
+/* --- CONTACTO / FOOTER --- */
+footer { background: #fff; padding: 4rem 0; border-top: 1px solid #eee; }
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+}
+.contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+.form-group label { font-weight: bold; }
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.btn-submit {
+    background: #ffb3a7;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+}
+.legal-info h3 { display: flex; align-items: center; gap: 10px; color: var(--purple-tag); }

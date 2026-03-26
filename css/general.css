@@ -1,0 +1,40 @@
+/* Variables de color y configuración global */
+:root {
+    --primary-blue: #004a99;
+    --accent-green: #1a735c;
+    --light-blue: #e7f1ff;
+    --text-dark: #333;
+    --purple-tag: #6f42c1;
+    --pink-link: #d63384;
+    --border-gray: #ddd;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Vital para WCAG 2.1 Reflow */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+/* Enlace de salto para teclados */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: var(--primary-blue);
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }

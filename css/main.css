@@ -1,0 +1,120 @@
+/* --- HEADER --- */
+header { border-bottom: 1px solid var(--border-gray); }
+header .container {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.logo img { max-width: 180px; height: auto; display: block; }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+nav a { text-decoration: none; color: var(--text-dark); font-weight: bold; font-size: 1.1rem; }
+
+/* --- HERO --- */
+.hero {
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, #ffffff, var(--light-blue));
+    text-align: center;
+}
+.hero h1 { 
+    color: var(--primary-blue); 
+    font-size: clamp(2rem, 8vw, 3.5rem); 
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.hero p { max-width: 800px; margin: 0 auto 1.5rem; font-size: 1.2rem; }
+.btn-hero {
+    background-color: #a0c4ff;
+    color: #000;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+}
+
+/* --- SECCIONES Y COMPONENTES --- */
+section { padding: 4rem 0; }
+h2 { 
+    color: var(--accent-green); 
+    font-size: 2.5rem; 
+    border-bottom: 3px solid var(--accent-green); 
+    padding-bottom: 10px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.grid-modulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+.modulo-item h3 { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    color: var(--accent-green);
+    font-size: 1.4rem;
+}
+
+/* --- TABLA / CALENDARIO --- */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+table { width: 100%; min-width: 700px; border-collapse: collapse; background: white; }
+th { background: #f8f9fa; color: #000000; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+th, td { padding: 20px; text-align: left; border-bottom: 1px solid #eee; }
+tr:nth-child(even) { background-color: #fafafa; }
+.td-date { color: var(--purple-tag); font-weight: bold; }
+.td-docente { color: var(--purple-tag); }
+
+/* --- DOCENTES --- */
+.docente-card {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.docente-card img {
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.docente-info { flex: 1; min-width: 300px; }
+.docente-info h3 { margin: 0 0 1rem; font-size: 1.8rem; color: #444; display: flex; align-items: center; gap: 10px; }
+.linkedin-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Media Query Responsivo */
+@media (max-width: 768px) {
+    .hero { padding: 3rem 0; }
+    .docente-card { text-align: left; }
+    .docente-card img { width: 100%; }
+}
