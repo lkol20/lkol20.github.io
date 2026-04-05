@@ -38,8 +38,3 @@ body {
     transition: top 0.2s;
 }
 .skip-link:focus { top: 0; }
-
-/* Enlaces genéricos */
-a:visited, a:hover, a:active { 
-    color: var(--primary-blue); 
-}
