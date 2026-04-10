@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calidad e Inteligencia Artificial - QualityAI</title>
+        <title>Página principal del curso sobre calidad del software aplicada con Inteligencia Artificial</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +24,15 @@
         <header aria-label="módulos">
             <div class="container">
                 <div class="logo">
-                    <img src="images/logo.jpg" alt="">
+                    <img src="images/logo.jpg" alt="Logotipo con la imagen de un cerebro y el nombre QualityAI">
                 </div>
                 <nav aria-label="Navegación principal">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#modulos">Módulos</a></li>
-                        <li><a href="#calendario">Calendario</a></li>
-                        <li><a href="#profesores">Profesores</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#"" aria-label="Estás en el principio de la página">Principal</a></li>
+                        <li><a href="#modulos" aria-label="Ir a la sección de módulos">Módulos</a></li>
+                        <li><a href="#calendario" aria-label="Ir a la sección de calendario">Calendario</a></li>
+                        <li><a href="#profesores" aria-label="Ir a la sección profesores">Profesores</a></li>
+                        <li><a href="#contacto" aria-label="Ir a la sección de contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -91,6 +91,7 @@
                     <h2>Calendario</h2>
                     <div class="table-wrapper" tabindex="0" role="region" aria-label="Tabla de fechas del curso">
                         <table>
+                            <caption>Calendario con los módulos, fecha y profesor.</caption>
                             <thead>
                                 <tr>
                                     <th scope="col">Módulo</th>
@@ -99,11 +100,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Principios básicos de IA</td><td class="td-date">12/10/2026</td><td class="td-docente">Alejandro Russo</td></tr>
-                                <tr><td>Transformers</td><td class="td-date">25/10/2026</td><td class="td-docente">Imani Williams</td></tr>
-                                <tr><td>Prompting</td><td class="td-date">04/11/2026</td><td class="td-docente">Elias Vance</td></tr>
-                                <tr><td>Herramientas manuales</td><td class="td-date">20/11/2026</td><td class="td-docente">Elias Vance</td></tr>
-                                <tr><td>Herramientas de automatización</td><td class="td-date">29/11/2026</td><td class="td-docente">Alejandro Russo</td></tr>
+                                <tr>
+                                    <td>Principios básicos de IA</td><td class="td-date">12/10/2026</td><td class="td-docente">Alejandro Russo</td>
+                                </tr>
+                                <tr>
+                                    <td>Transformers</td><td class="td-date">25/10/2026</td><td class="td-docente">Imani Williams</td>
+                                </tr>
+                                <tr>
+                                    <td>Prompting</td><td class="td-date">04/11/2026</td><td class="td-docente">Elias Vance</td>
+                                </tr>
+                                <tr>
+                                    <td>Herramientas manuales</td><td class="td-date">20/11/2026</td><td class="td-docente">Elias Vance</td>
+                                </tr>
+                                <tr>
+                                    <td>Herramientas de automatización</td><td class="td-date">29/11/2026</td><td class="td-docente">Alejandro Russo</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -115,13 +126,14 @@
                     <h2>Profesores</h2>
                     
                     <article class="docente-card">
-                        <img src="images/alejandro.jpg" alt="Alejandro Russo mostrando una red neuronal en una pantalla">
+                        <img src="images/alejandro.jpg" alt="Imagen de Alejandro Russo explicando una red neuronal desde una pantalla digital">
                         <div class="docente-info">
                             <h3>Alejandro Russo</h3>
                             <p>
-                                Ex-Líder de Automatización en una Big Tech, Alex se especializa en integrar modelos de IA 
-                                generativa en pipelines de CI/CD. Sus cursos prácticos enseñan a los QAs a programar agentes 
-                                inteligentes que detectan bugs antes de que lleguen a producción.
+                                Ex-Líder de Automatización en una Big Tech, Alex se especializa en integrar modelos de inteligencia artificial 
+                                generativa en pipelines de integración contibua y despliegue continuo. 
+                                Sus cursos prácticos enseñan a los ingenieros de calidad a programar agentes inteligentes que detectan bugs 
+                                antes de que lleguen a producción.
                             </p>
                             <div class="linkedin-row">
                                 <a href="https://es.linkedin.com/" target="_blank">Ir al perfil de linkedin de Alejandro</a>
@@ -130,11 +142,11 @@
                     </article>
 
                     <article class="docente-card">
-                        <img src="images/imani.jpg" alt="Imani Williams operando datos en pantallas digitales">
+                        <img src="images/imani.jpg" alt="Imagen de Imani Williams operando datos en varias pantallas digitales">
                         <div class="docente-info">
                             <h3> Imani Williams</h3>
                             <p>
-                                Doctora en Ciencias de la Computación y experta en Deep Learning, Imani centra su investigación en la detección 
+                                Doctora en Ciencias de la Computación y experta en aprendizaje profundo. Imani centra su investigación en la detección 
                                 predictiva de fallos. Enseña a utilizar algoritmos avanzados para analizar grandes volúmenes de datos de prueba 
                                 y optimizar la cobertura del testing.
                             </p>
@@ -145,7 +157,7 @@
                     </article>
 
                     <article class="docente-card">
-                        <img src="images/elias.jpg" alt="Imani Williams operando datos en pantallas digitales">
+                        <img src="images/elias.jpg" alt="Elias Vance explicando algoritmia en el podium de una sala">
                         <div class="docente-info">
                             <h3> Elias Vance</h3>
                             <p>
@@ -177,8 +189,14 @@
                                 <input type="email" id="email" name="email" autocomplete="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="comentarios">Dudas y/o comentarios</label>
-                                <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+                                <label for="observaciones">Observaciones</label>
+                                <small id="obs-hint">Máximo 500 caracteres. Indica las dudas u observaciones relacionadas con el curso.</small>
+                                <textarea id="observaciones" 
+                                          name="observaciones" 
+                                          rows="5" 
+                                          autocomplete="observaciones" 
+                                          required
+                                          aria-describedby="obs-hint"></textarea>
                             </div>
                             <button type="submit" class="btn-submit" id="btnEnviar">Enviar</button>
                         </form>
