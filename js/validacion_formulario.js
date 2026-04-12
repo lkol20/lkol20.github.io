@@ -20,8 +20,8 @@ document.getElementById("btnEnviar").addEventListener("click", function (e) {
       errores.push({ campo: "email", mensaje: "El correo electrónico no es válido." });
     }
 
-     if (comentarios.value.length < 8) {
-      errores.push({ campo: "comentarios", mensaje: "Los comentarios deben tener al menos 10 caracteres." });
+     if (observaciones.value.length < 8) {
+      errores.push({ campo: "observaciones", mensaje: "Las observaciones deben tener al menos 10 caracteres." });
     }
   
     // Si la longitud del array de errores es > 0, significa que hay algún error)
